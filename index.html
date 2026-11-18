@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Myanmar Transcript AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header><h1>Myanmar Transcript AI</h1><p>Video / Audio ကို မြန်မာစာတန်းထိုး SRT ပြောင်းရန်</p></header>
+    <section class="panel">
+      <label for="media">Video သို့မဟုတ် Audio ဖိုင်ရွေးပါ</label>
+      <input id="media" type="file" accept="audio/*,video/*">
+      <p class="hint">စမ်းသပ်ရန် ဖိုင်အသေး (အများဆုံး 3.5 MB) ကိုရွေးပါ။ YouTube link ကို တိုက်ရိုက်မထည့်နိုင်သေးပါ။</p>
+      <button id="go">မြန်မာစာတန်းထိုး ပြောင်းမယ်</button>
+      <p id="status" role="status"></p>
+    </section>
+    <section class="panel" id="result" hidden>
+      <h2>မြန်မာစာသား</h2><pre id="myanmar"></pre>
+      <button id="copy">စာသား Copy</button>
+      <button id="srt">SRT ဒေါင်းလုဒ်</button>
+    </section>
+    <footer>ပထမအဆင့် စမ်းသပ်ဗားရှင်း</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
