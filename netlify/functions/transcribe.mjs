@@ -1,4 +1,4 @@
-
+openai/gpt-oss-120b
 import Groq from "groq-sdk";
 
 const timeFormat = (seconds) => {
